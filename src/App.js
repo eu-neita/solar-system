@@ -1,9 +1,19 @@
 import React from 'react';
+import Header from './components/Header';
+import SolarSystem from './components/SolarSystem';
+import Title from './components/Title';
 
-class App extends React.Component {
+class app extends React.Component {
   render() {
-    return (<p>Sistema Solar</p>);
+    const headText = 'teste';
+    return (
+      <div>
+        <Header />
+        <SolarSystem />
+        <Title headline={ headText } />
+      </div>
+    );
   }
 }
 
-export default App;
+export default app;
